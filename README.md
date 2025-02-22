@@ -1,67 +1,38 @@
 # Personal Finance Tracker
 
-A Python-based command-line application to track personal finances, including income, expenses, and category-wise spending, with interactive visualizations.
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
+This is a command-line personal finance tracker application that allows you to add, view, edit, and delete transactions stored in a CSV file. The application also calculates your overall balance and provides interactive visualizations of your spending by category using matplotlib.
 
 ## Features
 
--   Transaction Management:
-    -      Add, edit, and delete financial transactions (date, description, category, amount).
--   Financial Calculations:
-    -      Calculate overall balance.
-    -      Calculate category-wise spending.
--   Data Visualization:
-    -      Generate pie charts to visualize category spending using `matplotlib`.
--   Data Persistence:
-    -      Stores transaction data in a CSV file.
--   Command-Line Interface (CLI):
-    -   User friendly menu driven interface.
+- **Data Storage:** Transactions are stored in a CSV file (`transactions.csv`).
+- **Data Input:** Add, edit, and delete transactions (date, description, category, amount).
+- **Financial Calculations:** Calculate overall balance and category-wise spending.
+- **Data Visualization:** Interactive pie chart visualization for category spending.
+- **CLI Interface:** Simple command-line interface for interaction.
 
 ## Installation
 
-1.  Clone the repository:
+1. **Clone the repository:**
 
-    ```bash
-    git clone <repository_url>
-    cd personal-finance-tracker
-    ```
+   ```bash
+   git clone https://github.com/abhinav-2705/Personal-Finance-Tracker.git
+   cd personal-finance-tracker 
+Create and activate a virtual environment:
 
-2.  Install dependencies:
+On macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
 
-    ```bash
-    pip install matplotlib
-    ```
+On Windows:
+python -m venv venv
+venv\Scripts\activate
 
-## Usage
+Install the dependencies:
+pip install -r REQUIREMENTS.txt
 
-1.  Run the application:
+Run the application:
+python main.py
 
-    ```bash
-    python main.py
-    ```
 
-2.  Follow the menu prompts:
 
-    -      Choose options to add transactions, view transactions, calculate balance, visualize spending, etc.
-
-3.  Data storage:
-
-    -   Transaction data is stored in `transactions.csv`.
-
-## Dependencies
-
--   Python 3.x
--   matplotlib (for visualizations)
--   csv (built-in)
--   datetime (built-in)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues to report bugs or suggest new features.
+ # HAPPY CODING !
